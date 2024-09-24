@@ -57,7 +57,7 @@ export default function SignUp() {
         <div className="flex-1" >
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <div>
-              <Label value="Your username" />
+              <Label value="Tu nombre de usuario" />
               <TextInput
                 type="text"
                 placeholder="Username"
@@ -66,7 +66,7 @@ export default function SignUp() {
               />
             </div>
             <div>
-              <Label value="Your email" />
+              <Label value="Tu email" />
               <TextInput
                 type="email"
                 placeholder="name@company.com"
@@ -75,7 +75,7 @@ export default function SignUp() {
               />
             </div>
             <div>
-              <Label value="Your password" />
+              <Label value="Tu contraseña" />
               <TextInput
                 type="password"
                 placeholder="Password"
@@ -94,14 +94,14 @@ export default function SignUp() {
                   <span className="pl-3">Loading...</span>
                 </>
               ) : (
-                "Sign up"
+                "Registrarse"
               )}
             </Button>
           </form>
           <div className="flex gap-2 text-sm mt-5">
-            <span>Have an account?</span>
+            <span>Tienes una cuenta?</span>
             <Link to="/sign-in" className="text-blue-500">
-              Sign in
+              Inicia sesion
             </Link>
           </div>
           {errorMessage && (
